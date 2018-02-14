@@ -2,11 +2,9 @@
     <string name="app_name">Dicee</string>
     <string name="button_text">Roll</string>
     <string name="roll_information">
-        Roll a double or combination of more than 7 points! Double points if you get them both!
+        Roll a double or combination of more than %d points! Double points if you get them both!
     </string>
-    <string name="roll_total_starting">Roll Total: 0</string>
     <string name="roll_total">Roll Total: %d</string>
-    <string name="points_total_starting">Points: 0</string>
     <string name="points_total">Points: %d</string>
     <string name="rolled_match">You rolled a match! You receive one point</string>
     <string name="rolled_high">You beat the score! You receive one point</string>

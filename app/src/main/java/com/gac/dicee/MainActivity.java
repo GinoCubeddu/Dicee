@@ -31,13 +31,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Initialise variables
-        scoreToBeat = 7;
+        scoreToBeat = 9;
         score = 0;
         leftDiceView = findViewById(R.id.image_leftDice);
         rightDiceView = findViewById(R.id.image_rightDice);
         rollInformationView = findViewById(R.id.roll_information);
         rollTotalView = findViewById(R.id.roll_total);
         pointTotalView = findViewById(R.id.points_total);
+
+        final TextView rollRulesView = findViewById(R.id.app_rules);
+
+        // Format the required text with starting values
+        rollRulesView.setText(String.format(getString(R.string.roll_information), scoreToBeat));
+        pointTotalView.setText(String.format(getString(R.string.points_total), score));
+        rollTotalView.setText(String.format(getString(R.string.roll_total), 0));
 
         // Get refrence to the dice images
         final int[] diceImages = {
